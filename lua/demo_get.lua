@@ -10,6 +10,7 @@ path,agrstext = string.match(uri, "(.*)%?(.*)")
 
 
 local SLEEPTIME = 0.02
-
-ngx.say("Hello : " .. agrstext)
-ngx.sleep(SLEEPTIME)
+for k, v in pairs(uri_args) do
+    ngx.say("[URI_AGRS] " .. k .. ":" .. v)
+    ngx.sleep(SLEEPTIME)
+end
