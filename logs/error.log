@@ -1,0 +1,274 @@
+2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+2020/11/28 17:32:36 [emerg] 1533#1533: still could not bind()
+2020/11/28 17:40:26 [notice] 1681#1681: signal process started
+2020/11/28 17:43:49 [notice] 1725#1725: signal process started
+2020/11/28 18:55:09 [notice] 1784#1784: signal process started
+2020/11/28 18:56:11 [notice] 1788#1788: signal process started
+2020/11/28 18:56:13 [error] 1789#1789: *7 open() "openresty-test/www/html/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", host: "127.0.0.1:6699"
+2020/11/28 19:14:25 [alert] 1869#1869: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:14:25 [notice] 1869#1869: signal process started
+2020/11/28 19:14:25 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:14:44 [alert] 1872#1872: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:14:44 [notice] 1872#1872: signal process started
+2020/11/28 19:14:44 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:24:17 [error] 1873#1873: *10 open() "openresty-test/www/html/api2/getip" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /api2/getip HTTP/1.1", host: "127.0.0.1:6699"
+2020/11/28 19:24:31 [alert] 1899#1899: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:24:31 [notice] 1899#1899: signal process started
+2020/11/28 19:24:31 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:25:15 [error] 1900#1900: *13 lua entry thread aborted: runtime error: openresty-test/lua/getip.lua:4: attempt to call global 'str' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getip.lua: in main chunk, client: 127.0.0.1, server: , request: "GET /api2/getip HTTP/1.1", host: "127.0.0.1:6699"
+2020/11/28 19:26:01 [error] 1900#1900: *14 directory index of "openresty-test/htdocs/" is forbidden, client: 220.163.68.215, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:26:04 [error] 1900#1900: *14 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 220.163.68.215, server: , request: "GET /favicon.ico HTTP/1.1", host: "117.50.65.5:6699", referrer: "http://117.50.65.5:6699/"
+2020/11/28 19:30:41 [alert] 1907#1907: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:30:41 [notice] 1907#1907: signal process started
+2020/11/28 19:30:41 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:36:37 [alert] 1918#1918: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:36:37 [notice] 1918#1918: signal process started
+2020/11/28 19:36:37 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:36:44 [error] 1919#1919: *21 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a= HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:46 [error] 1919#1919: *22 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a= HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:46 [error] 1919#1919: *23 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a= HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:46 [error] 1919#1919: *24 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a= HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:51 [error] 1919#1919: *25 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a= HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:51 [error] 1919#1919: *26 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:51 [error] 1919#1919: *27 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:52 [error] 1919#1919: *28 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:53 [error] 1919#1919: *29 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:58 [error] 1919#1919: *30 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:58 [error] 1919#1919: *31 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:36:58 [error] 1919#1919: *32 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:37:28 [error] 1919#1919: *33 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:38:28 [error] 1919#1919: *35 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:35):4: attempt to call a table value
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:35): in main chunk, client: 220.163.68.215, server: , request: "GET /hello123?a=123 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:38:49 [alert] 1933#1933: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:38:49 [notice] 1933#1933: signal process started
+2020/11/28 19:38:49 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:44:31 [alert] 1943#1943: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:44:31 [notice] 1943#1943: signal process started
+2020/11/28 19:44:31 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:44:57 [alert] 1946#1946: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:44:57 [notice] 1946#1946: signal process started
+2020/11/28 19:44:57 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/11/28 19:56:53 [error] 1947#1947: *47 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:23: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:23: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:56:55 [error] 1947#1947: *48 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:23: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:23: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:56:57 [error] 1947#1947: *49 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:23: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:23: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:56:58 [error] 1947#1947: *50 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:23: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:23: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 19:57:05 [error] 1947#1947: *51 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:23: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:23: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:25 [error] 1947#1947: *54 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:27 [error] 1947#1947: *55 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:27 [error] 1947#1947: *56 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:27 [error] 1947#1947: *57 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:32 [error] 1947#1947: *58 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:45 [error] 1947#1947: *59 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:45 [error] 1947#1947: *60 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:01:45 [error] 1947#1947: *61 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:15 [error] 1947#1947: *62 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:15 [error] 1947#1947: *63 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:16 [error] 1947#1947: *64 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:21 [error] 1947#1947: *65 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:24 [error] 1947#1947: *66 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:24 [error] 1947#1947: *67 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:02:24 [error] 1947#1947: *68 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:17: attempt to concatenate global 'method' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:14:33 [error] 1947#1947: *77 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:24: attempt to perform arithmetic on a string value
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:14:34 [error] 1947#1947: *76 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:24: attempt to perform arithmetic on a string value
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:14:35 [error] 1947#1947: *78 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:24: attempt to perform arithmetic on a string value
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:14:35 [error] 1947#1947: *79 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:24: attempt to perform arithmetic on a string value
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:14:40 [error] 1947#1947: *80 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:24: attempt to perform arithmetic on a string value
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:16:14 [error] 1947#1947: *84 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 220.163.68.215, server: , request: "GET /favicon.ico HTTP/1.1", host: "117.50.65.5:6699", referrer: "http://117.50.65.5:6699/api2/getheaders?aa=qwqw&qwq=3u293u23"
+2020/11/28 20:54:54 [error] 1947#1947: *87 failed to load external Lua file "openresty-test/lua/getheaders.lua": openresty-test/lua/getheaders.lua:9: invalid escape sequence near '"(.*)%', client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:55:10 [error] 1947#1947: *88 failed to load external Lua file "openresty-test/lua/getheaders.lua": openresty-test/lua/getheaders.lua:9: invalid escape sequence near '"(.*)%', client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:56:27 [error] 1947#1947: *89 failed to load external Lua file "openresty-test/lua/getheaders.lua": openresty-test/lua/getheaders.lua:9: invalid escape sequence near '"(.*)%', client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:56:41 [error] 1947#1947: *90 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:30: attempt to concatenate global 'path' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:57:11 [error] 1947#1947: *91 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:30: attempt to concatenate global 'path' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 20:57:20 [error] 1947#1947: *92 failed to load external Lua file "openresty-test/lua/getheaders.lua": openresty-test/lua/getheaders.lua:9: invalid escape sequence near '"(.*)%', client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 21:01:44 [error] 1947#1947: *95 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:49: bad argument #1 to 'pairs' (table expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:49: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 21:01:54 [error] 1947#1947: *96 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:49: bad argument #1 to 'pairs' (table expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	openresty-test/lua/getheaders.lua:49: in main chunk, client: 220.163.68.215, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 22:53:21 [error] 1947#1947: *100 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:49: attempt to concatenate local 'cookies' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 221.213.44.42, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/28 22:53:27 [error] 1947#1947: *101 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:49: attempt to concatenate local 'cookies' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 221.213.44.42, server: , request: "GET /api2/getheaders?aa=qwqw&qwq=3u293u23 HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 04:26:31 [error] 1947#1947: *103 directory index of "openresty-test/htdocs/" is forbidden, client: 183.136.225.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 04:26:32 [error] 1947#1947: *104 directory index of "openresty-test/htdocs/" is forbidden, client: 183.136.225.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 04:26:32 [error] 1947#1947: *105 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 183.136.225.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 05:47:23 [error] 1947#1947: *108 directory index of "openresty-test/htdocs/" is forbidden, client: 167.248.133.38, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 05:47:23 [error] 1947#1947: *109 directory index of "openresty-test/htdocs/" is forbidden, client: 167.248.133.38, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 11:27:27 [error] 1947#1947: *110 directory index of "openresty-test/htdocs/" is forbidden, client: 183.136.225.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 11:27:27 [error] 1947#1947: *111 directory index of "openresty-test/htdocs/" is forbidden, client: 183.136.225.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/29 11:27:27 [error] 1947#1947: *112 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 183.136.225.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "117.50.65.5:6699"
+2020/11/30 23:13:39 [error] 1947#1947: *115 directory index of "openresty-test/htdocs/" is forbidden, client: 106.75.176.235, server: , request: "GET / HTTP/1.0", host: "117.50.65.5:6699"
+2020/11/30 23:13:39 [error] 1947#1947: *116 directory index of "openresty-test/htdocs/" is forbidden, client: 106.75.184.38, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/12/01 00:21:48 [error] 1947#1947: *117 directory index of "openresty-test/htdocs/" is forbidden, client: 221.213.44.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/12/01 00:21:50 [error] 1947#1947: *117 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "117.50.65.5:6699", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:22:37 [error] 1947#1947: *117 directory index of "openresty-test/htdocs/" is forbidden, client: 221.213.44.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/12/01 00:22:39 [error] 1947#1947: *117 directory index of "openresty-test/htdocs/" is forbidden, client: 221.213.44.42, server: , request: "GET / HTTP/1.1", host: "117.50.65.5:6699"
+2020/12/01 00:26:19 [error] 1947#1947: *120 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:26:20 [error] 1947#1947: *121 open() "openresty-test/htdocs/ajax/demo_get.asp" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get.asp?t=0.9329340217451276 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:26:21 [error] 1947#1947: *122 open() "openresty-test/htdocs/ajax/demo_get.asp" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get.asp?t=0.30909135822023004 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:26:22 [error] 1947#1947: *123 open() "openresty-test/htdocs/ajax/demo_get.asp" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get.asp?t=0.6741456261398541 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:28:22 [error] 1947#1947: *125 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:28:25 [error] 1947#1947: *126 open() "openresty-test/htdocs/ajax/demo_get.asp" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get.asp?t=%E6%B5%8B%E8%AF%95Ajax%E6%B5%8B%E8%AF%95 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:36:04 [error] 1947#1947: *128 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:36:05 [error] 1947#1947: *129 open() "openresty-test/htdocs/ajax/demo_get" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get?t=%E6%B5%8B%E8%AF%95Ajax%E6%B5%8B%E8%AF%95 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:36:18 [error] 1947#1947: *131 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:36:19 [error] 1947#1947: *132 open() "openresty-test/htdocs/ajax/demo_get" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get?t=%E6%B5%8B%E8%AF%95Ajax%E6%B5%8B%E8%AF%95 HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:36:48 [error] 1947#1947: *133 open() "openresty-test/htdocs/ajax/demo_get" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /ajax/demo_get HTTP/1.1", host: "wzcgzs.95306.cn"
+2020/12/01 00:36:48 [error] 1947#1947: *134 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/ajax/demo_get"
+2020/12/01 00:37:44 [alert] 3771#3771: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/12/01 00:37:44 [emerg] 3771#3771: unexpected end of file, expecting "}" in openresty-test/conf/nginx.conf:56
+2020/12/01 00:38:10 [alert] 3773#3773: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/12/01 00:38:10 [notice] 3773#3773: signal process started
+2020/12/01 00:38:10 [alert] 1696#1696: lua_code_cache is off; this will hurt performance in openresty-test/conf/nginx.conf:17
+2020/12/01 00:38:31 [error] 3774#3774: *135 lua entry thread aborted: runtime error: openresty-test/lua/demo_get.lua:14: attempt to concatenate global 'agrstext' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/demo_get.lua: in main chunk, client: 221.213.44.42, server: , request: "GET /ajax/demo_get HTTP/1.1", host: "wzcgzs.95306.cn"
+2020/12/01 00:38:32 [error] 3774#3774: *136 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/ajax/demo_get"
+2020/12/01 00:38:39 [error] 3774#3774: *138 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/ajax/demo_get?q=21"
+2020/12/01 00:38:44 [error] 3774#3774: *140 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/ajax/demo_get?q=21"
+2020/12/01 00:38:58 [error] 3774#3774: *142 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/"
+2020/12/01 00:41:00 [error] 3774#3774: *148 open() "openresty-test/htdocs/favicon.ico" failed (2: No such file or directory), client: 221.213.44.42, server: , request: "GET /favicon.ico HTTP/1.1", host: "wzcgzs.95306.cn", referrer: "http://117.50.65.5:6699/ajax/demo_get?q=21"
