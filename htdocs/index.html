@@ -25,13 +25,48 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("GET","/ajax/demo_get?t=" + "GET方法测试Ajax请求",true);
 xmlhttp.send();
 }
+
+function loadXMLDocP()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("POST","/ajax/demo_post?t=" + "POST方法测试Ajax请求",true);
+xmlhttp.send("id=12121212&action=delete");
+}
 </script>
 </head>
 <body>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <h2>AJAX</h2>
-<button type="button" onclick="loadXMLDoc()">请求数据</button>
+<button type="button" onclick="loadXMLDoc()">GET请求数据</button>
+<button type="button" onclick="loadXMLDocP()">POST请求数据</button>
 <div id="myDiv"></div>
+<br />
+<br />
+<h2>form 表单post提交</h2>
+<!-- form 表单post提交，默认会刷新到 action 页面 -->
+    <form action="/ipnifa/RegisterUserServlet" method="POST" name="post提交">
+      <p><input type="hidden" name="method" value="login"></p>
+      <p>username: <input type="text" name="username" value="18201155100"></p>
+      <p>password: <input type="password" name="password" value="95cb381443ec2589082a844ebb06575c9e45419af4c464264a64f193da6c85eb"></p>
+      <p>validateCode: <input type="text" name="validateCode" value="9340"></p>
+      <input type="submit" value="提交">
+    </form>
+    
 
 </body>
 </html>
