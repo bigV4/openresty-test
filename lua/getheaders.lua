@@ -7,9 +7,12 @@ local uri = ngx.var.request_uri
 local cookies = ngx.var.http_cookie
 local uri_args = ngx.req.get_uri_args()
 path,agrstext = string.match(uri, "(.*)%?(.*)")
+if not path then
+    path = uri
+end
 
 
-local SLEEPTIME = 0.02
+local SLEEPTIME = 0.01
 
 ngx.say("remote_addr : " .. ngx.var.remote_addr)
 ngx.sleep(SLEEPTIME)
@@ -31,14 +34,24 @@ ngx.sleep(SLEEPTIME)
 ngx.say("path : " .. path)
 ngx.sleep(SLEEPTIME)
 
-ngx.say("args : " .. agrstext)
-ngx.sleep(SLEEPTIME)
-
-ngx.say("http_version :" .. http_version)
-for k, v in pairs(uri_args) do
-    ngx.say("[URI_AGRS] " .. k .. ":" .. v)
+if agrstext then
+    ngx.say("args : " .. agrstext)
+    ngx.sleep(SLEEPTIME)
+else
+    ngx.say("No Args : ")
     ngx.sleep(SLEEPTIME)
 end
+
+ngx.say("http_version :" .. http_version)
+ngx.sleep(SLEEPTIME)
+
+if uri_args then
+    for k, v in pairs(uri_args) do
+        ngx.say("[URI_AGRS] " .. k .. ":" .. v)
+        ngx.sleep(SLEEPTIME)
+    end
+end
+
 
 ngx.sleep(SLEEPTIME)
 for k, v in pairs(headers) do
@@ -46,4 +59,8 @@ for k, v in pairs(headers) do
     ngx.sleep(SLEEPTIME)
 end
 
-ngx.say("[COOKIE] " .. cookies)
+if cookies then
+    ngx.say("[COOKIE] " .. cookies)
+else
+    ngx.say("No Cookies ")
+end

@@ -1,5 +1,5 @@
-2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
-2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
-2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
-2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
-2020/11/28 17:32:36 [emerg] 1533#1533: bind() to 0.0.0.0:6699 failed (98: Address already in use)
+
+2020/12/04 16:47:35 [error] 12028#12028: *260 lua entry thread aborted: runtime error: openresty-test/lua/getheaders.lua:31: attempt to concatenate global 'path' (a nil value)
+stack traceback:
+coroutine 0:
+	openresty-test/lua/getheaders.lua: in main chunk, client: 125.70.78.166, server: , request: "GET /api2/getheaders HTTP/1.1", host: "uc.ddosyou.win:6699"
